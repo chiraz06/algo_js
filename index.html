@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+           
+console.log("inverser les variable exercise 1 ");
+var x=6;
+var y=3;
+console.log (x,y);
+var fixe=x;
+x=y;
+y=fixe; 
+console.log(x,y);
+
+console.log("afficher les variable exercise 2");
+var nom="toto";
+var age =30 ;
+var homme =true;
+console.log(nom);
+console.log(age);
+ if (homme=true) {
+     console.log("cest un homme");
+ }
+
+console.log("puissance de 2 exercise 3");
+function puissance() {
+var X = document.getElementById("nombre1").value;
+var n = document.getElementById("nombre2").value;
+
+if (n == 0) {
+       return 1;
+	}
+	   
+    if (n == 1) {
+       return x;
+	}  
+	
+    if (n % 2 == 0) {
+        y = Puissance(x, n / 2);
+        return  y * y;
+	}
+	
+    else {
+        return x * Puissance(x, n - 1);
+	}
+	
+	document.getElementById("resultat").innerHTML='La puissance vaut ' + X;
+}
+console.log("*****la somme: ex 3");
+var n1 = 2;
+var n2 = 7;
+
+function addition(x, y) {
+    return x + y;
+}
+ 
+console.log(addition(n1,n2));
+
+
+console.log("******minute seconde ex 3");
+
+var m=3 ;
+function minuteToSecond(minutes) {
+  return  minutes * 60;
+}
+ console.log(  m + "minutes" + minuteToSecond(m) + "secondes" )   ;   
+
+ console.log("********exercise 4");
+  var n=1; 
+ 
+ function increment(n) {
+  return ++n;
+ }
+ console.log(increment(n));
+
+
+ console.log("************surface triangle  exercise 5");
+ var base=6;
+ var hauteur=9;
+ function getSurface(base, hauteur) {
+  return (base * hauteur) /2;
+}
+console.log(getSurface(base,hauteur));
+
+  console.log("***** inverser exercise 6");
+let f='hello';
+  let s = 'WayToLearnX';
+let rev = s.split('WayToLearnX').reverse().join(' XnraeLoTyaW');
+console.log(rev);
+let rel = f.split('hello').reverse().join(' olleh');
+console.log(rel);
+    console.log("******** max entier exercise 7 *****")
+    var x=2;
+    var y=8;
+    var z=5;
+    function getMax(a, b, c) {
+  
+  max = 0;
+  if (a > b){
+    max = a;
+  } 
+  else{
+    max = b;
+  }
+  if (c > max){
+    max = c;
+  }
+  return max;
+}
+
+console.log(" le plus grands entier c'est " +getMax(x,y,z));
+
+
+console.log("exersice 8");
+var tab=[2,7,89]; 
+function getFirst(tab) {
+
+return tab[0];
+
+}
+console.log("le premier element de tableau" + getFirst(tab));
+
+console.log("**********exersice 9");
+
+
+console.log(document.URL);
+
+
+console.log("**********exersice 10");
+var a=2;
+var b=4;
+function resteDiv(a, b) {
+  return a % b; 
+}
+  console.log(resteDiv(a,b));
+
+  console.log("**********exersice 11");
+  var a=5;
+  var b=20;
+  function check(a, b) {
+  
+  return a + b < 100;
+}
+console.log(check(a,b));
+
+console.log("**********exersice 12");
+var heure=4;
+function heureSeconde(heure) {
+  return heure * 3600;
+}
+console.log(heureSeconde(heure));
+
+console.log("**********exersice 13");
+
+function checkNbr(n) {
+  return n <= 0;
+}
+// Afficher la sortie
+console.log(checkNbr(1));
+console.log(checkNbr(-1));
+console.log(checkNbr(0));
+
+console.log("**********exersice 14");
+
+
+
+function isEqual(nbr1, nbr2) {
+	
+ 
+
+return nbr1 === nbr2;
+}
+
+
+console.log(isEqual(3, 6));
+console.log(isEqual(1, '1'));
+console.log(isEqual(1, 1));
+
+
+console.log("**********exersice 15");
+
+
+
+function isDivisible(n) {
+
+return n % 5 === 0;
+}
+
+// Afficher la sortie
+console.log(isDivisible(5));
+console.log(isDivisible(10));
+console.log(isDivisible(6));
+
+console.log("******exersice 16");
+
+function hmTos(heure, minute) {
+
+return (heure*3600) + (minute*60);
+}
+console.log(hmTos(1, 10));
+console.log(hmTos(0, 59));
+console.log(hmTos(0, 0));
+console.log("******exersice 17");
+
+
+      </script>
+</body>
+</html>
